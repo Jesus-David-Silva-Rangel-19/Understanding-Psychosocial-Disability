@@ -29,6 +29,8 @@ const ColombiaSection: React.FC = () => {
             <li>Asociación Colombiana de Personas con Esquizofrenia y sus Familias</li>
             <li>Fundación País Posible - Programas de salud mental</li>
             <li>Corporación Síndrome de Down</li>
+            <li>Fundación Santa Fe de Bogotá</li>
+            <li>Porque Quiero Estar Bien</li>
           </ul>
         </div>
         

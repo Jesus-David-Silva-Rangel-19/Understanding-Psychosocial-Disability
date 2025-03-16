@@ -14,8 +14,8 @@ const Quote: React.FC<QuoteProps> = ({ text, author, className }) => {
       "bg-gradient-to-r from-theme-purple-light to-theme-blue-light p-6 md:p-8 rounded-xl shadow-md my-12", 
       className
     )}>
-      <div className="text-xl md:text-2xl italic text-gray-700 font-labrada before:content-['\u201C'] after:content-['\u201D']">
-        {text}
+      <div className="text-xl md:text-2xl italic text-gray-700 font-labrada">
+        "{text}"
       </div>
       {author && (
         <footer className="mt-4 text-right text-theme-purple-dark font-medium">
