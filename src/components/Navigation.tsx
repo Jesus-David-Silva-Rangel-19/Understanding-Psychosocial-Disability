@@ -4,13 +4,16 @@ import { cn } from '@/lib/utils';
 import { Menu, X } from 'lucide-react';
 
 const navItems = [
-  { label: 'What is Psychosocial Disability?', href: '#what-is' },
-  { label: 'Characteristics', href: '#characteristics' },
-  { label: 'Common Disorders', href: '#disorders' },
-  { label: 'Support & Help', href: '#support' },
-  { label: 'OCD & Psychosocial Disability', href: '#ocd' },
-  { label: 'Resources', href: '#resources' },
-  { label: 'Personal Stories', href: '#stories' }
+  { label: '¿Qué es la Discapacidad Psicosocial?', href: '#what-is' },
+  { label: 'Características', href: '#characteristics' },
+  { label: 'Trastornos Comunes', href: '#disorders' },
+  { label: 'Apoyo y Ayuda', href: '#support' },
+  { label: 'TOC y Discapacidad Psicosocial', href: '#ocd' },
+  { label: 'Recursos', href: '#resources' },
+  { label: 'Recursos en Colombia', href: '#colombia' },
+  { label: 'Otras Discapacidades', href: '#other-disabilities' },
+  { label: 'Diagnóstico', href: '#diagnosis' },
+  { label: 'Experiencias Personales', href: '#stories' }
 ];
 
 const Navigation: React.FC = () => {
@@ -47,7 +50,7 @@ const Navigation: React.FC = () => {
     )}>
       <div className="container mx-auto px-4 flex items-center justify-between">
         <a href="#top" className="text-2xl font-alegreya text-theme-purple">
-          PsychoSocial
+          PsicoSocial
         </a>
 
         {/* Mobile menu button */}

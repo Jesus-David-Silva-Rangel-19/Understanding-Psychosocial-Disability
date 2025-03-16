@@ -13,11 +13,11 @@ const Hero: React.FC<HeroProps> = ({ className }) => {
       
       <div className="relative section-container flex flex-col items-center justify-center min-h-[70vh] z-10">
         <h1 className="text-4xl md:text-6xl lg:text-7xl text-center max-w-4xl mb-6 text-theme-purple-dark">
-          Understanding Psychosocial Disability
+          Entendiendo la Discapacidad Psicosocial
         </h1>
         
         <p className="text-xl md:text-2xl text-center max-w-2xl mb-10 text-gray-600">
-          A perspective on mental health conditions and their impact on daily functioning
+          Una perspectiva sobre las condiciones de salud mental y su impacto en el funcionamiento diario
         </p>
         
         <div className="flex flex-wrap justify-center gap-4">
@@ -25,13 +25,13 @@ const Hero: React.FC<HeroProps> = ({ className }) => {
             href="#what-is" 
             className="bg-theme-purple hover:bg-theme-purple-dark text-white font-medium py-3 px-6 rounded-full transition-colors duration-300"
           >
-            Learn More
+            Aprender Más
           </a>
           <a 
             href="#support" 
             className="bg-white text-theme-purple border border-theme-purple hover:bg-theme-purple-light font-medium py-3 px-6 rounded-full transition-colors duration-300"
           >
-            Find Support
+            Encontrar Apoyo
           </a>
         </div>
       </div>

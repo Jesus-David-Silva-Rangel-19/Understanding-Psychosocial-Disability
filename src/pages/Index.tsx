@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Brain, Heart, Users, Book, MessageSquare, Search, Info } from 'lucide-react';
+import { Brain, Heart, Users, Book, MessageSquare, Search, Info, Wheelchair, Medical, FileCheck } from 'lucide-react';
 
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
@@ -21,367 +21,585 @@ const Index = () => {
       <main className="flex-grow">
         <Hero />
         
-        {/* What is Psychosocial Disability? */}
-        <Section id="what-is" title="What is Psychosocial Disability?">
+        {/* ¿Qué es la Discapacidad Psicosocial? */}
+        <Section id="what-is" title="¿Qué es la Discapacidad Psicosocial?">
           <div className="grid md:grid-cols-2 gap-8">
             <div className="space-y-4">
               <p>
-                A psychosocial disability refers to a disability that arises when mental health conditions interact with social barriers. Unlike a purely medical view of mental illness, psychosocial disability recognizes the important social dimensions of disability and the impact of social obstacles faced by people with mental health conditions.
+                Una discapacidad psicosocial se refiere a una discapacidad que surge cuando las condiciones de salud mental interactúan con barreras sociales. A diferencia de una visión puramente médica de la enfermedad mental, la discapacidad psicosocial reconoce las importantes dimensiones sociales de la discapacidad y el impacto de los obstáculos sociales que enfrentan las personas con condiciones de salud mental.
               </p>
               <p>
-                These disabilities arise from the interaction between mental health conditions and various social factors, creating barriers to participation in society on an equal basis with others.
+                Estas discapacidades surgen de la interacción entre las condiciones de salud mental y diversos factores sociales, creando barreras para la participación en la sociedad en igualdad de condiciones con los demás.
               </p>
             </div>
             <div className="space-y-4">
               <p>
-                The Convention on the Rights of Persons with Disabilities (CRPD) recognizes that disability is an evolving concept resulting from the interaction between persons with impairments and attitudinal and environmental barriers that hinder their full and effective participation in society.
+                La Convención sobre los Derechos de las Personas con Discapacidad (CDPD) reconoce que la discapacidad es un concepto en evolución que resulta de la interacción entre las personas con deficiencias y las barreras actitudinales y ambientales que impiden su participación plena y efectiva en la sociedad.
               </p>
               <p>
-                Psychosocial disabilities can be temporary or permanent, episodic or ongoing, and can vary in severity. They can affect a person's thinking, perception, mood, personality, and relationships.
+                Las discapacidades psicosociales pueden ser temporales o permanentes, episódicas o continuas, y pueden variar en gravedad. Pueden afectar el pensamiento, la percepción, el estado de ánimo, la personalidad y las relaciones de una persona.
               </p>
             </div>
           </div>
           
           <Quote 
-            text="Psychosocial disability looks beyond the medical model to consider how society creates barriers for people with mental health conditions."
-            author="World Health Organization"
+            text="La discapacidad psicosocial va más allá del modelo médico para considerar cómo la sociedad crea barreras para las personas con condiciones de salud mental."
+            author="Organización Mundial de la Salud"
             className="my-12"
           />
           
           <div className="mt-8">
             <h3 className="text-2xl font-alegreya font-black mb-4 text-theme-purple-dark">
-              Relationship to Mental Health
+              Relación con la Salud Mental
             </h3>
             <div className="grid md:grid-cols-2 gap-8">
               <div className="card-highlight p-6">
-                <h4 className="text-xl font-alegreya font-black mb-3 text-theme-blue">Overlap</h4>
-                <p>Mental health conditions can lead to psychosocial disabilities when they interact with social barriers, but not all mental health conditions result in disability. The severity, duration, and social context all play important roles.</p>
+                <h4 className="text-xl font-alegreya font-black mb-3 text-theme-blue">Superposición</h4>
+                <p>Las condiciones de salud mental pueden conducir a discapacidades psicosociales cuando interactúan con barreras sociales, pero no todas las condiciones de salud mental resultan en discapacidad. La gravedad, la duración y el contexto social juegan roles importantes.</p>
               </div>
               <div className="card-highlight p-6">
-                <h4 className="text-xl font-alegreya font-black mb-3 text-theme-blue">Distinction</h4>
-                <p>While mental health focuses on the medical and psychological aspects of a condition, psychosocial disability emphasizes the social and functional impacts, including experiences of discrimination, exclusion, and barriers to participation.</p>
+                <h4 className="text-xl font-alegreya font-black mb-3 text-theme-blue">Distinción</h4>
+                <p>Mientras que la salud mental se centra en los aspectos médicos y psicológicos de una condición, la discapacidad psicosocial enfatiza los impactos sociales y funcionales, incluidas las experiencias de discriminación, exclusión y barreras para la participación.</p>
               </div>
             </div>
           </div>
         </Section>
         
-        {/* Characteristics */}
-        <Section id="characteristics" title="Characteristics of Psychosocial Disability" color="light">
+        {/* Características */}
+        <Section id="characteristics" title="Características de la Discapacidad Psicosocial" color="light">
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
             <div className="card-highlight p-6">
-              <h3 className="text-xl font-alegreya font-black mb-3 text-theme-purple-dark">Fluctuating Nature</h3>
-              <p>Psychosocial disabilities often have an episodic nature. Symptoms and functioning may vary over time, with periods of greater difficulty and periods of wellness.</p>
+              <h3 className="text-xl font-alegreya font-black mb-3 text-theme-purple-dark">Naturaleza Fluctuante</h3>
+              <p>Las discapacidades psicosociales a menudo tienen una naturaleza episódica. Los síntomas y el funcionamiento pueden variar con el tiempo, con períodos de mayor dificultad y períodos de bienestar.</p>
             </div>
             
             <div className="card-highlight p-6">
-              <h3 className="text-xl font-alegreya font-black mb-3 text-theme-purple-dark">Invisible Disability</h3>
-              <p>Often not immediately apparent to others, leading to misunderstandings about the validity and seriousness of the disability.</p>
+              <h3 className="text-xl font-alegreya font-black mb-3 text-theme-purple-dark">Discapacidad Invisible</h3>
+              <p>A menudo no es inmediatamente aparente para los demás, lo que lleva a malentendidos sobre la validez y la gravedad de la discapacidad.</p>
             </div>
             
             <div className="card-highlight p-6">
-              <h3 className="text-xl font-alegreya font-black mb-3 text-theme-purple-dark">Social Barriers</h3>
-              <p>Environmental and attitudinal barriers can significantly worsen the disability. Stigma and discrimination are particularly common social barriers.</p>
+              <h3 className="text-xl font-alegreya font-black mb-3 text-theme-purple-dark">Barreras Sociales</h3>
+              <p>Las barreras ambientales y actitudinales pueden empeorar significativamente la discapacidad. El estigma y la discriminación son barreras sociales particularmente comunes.</p>
             </div>
             
             <div className="card-highlight p-6">
-              <h3 className="text-xl font-alegreya font-black mb-3 text-theme-purple-dark">Functional Impact</h3>
-              <p>Can affect various domains of functioning including self-care, social interactions, concentration, adaptability, and the ability to maintain employment.</p>
+              <h3 className="text-xl font-alegreya font-black mb-3 text-theme-purple-dark">Impacto Funcional</h3>
+              <p>Puede afectar varios dominios de funcionamiento, incluido el autocuidado, las interacciones sociales, la concentración, la adaptabilidad y la capacidad para mantener un empleo.</p>
             </div>
             
             <div className="card-highlight p-6">
-              <h3 className="text-xl font-alegreya font-black mb-3 text-theme-purple-dark">Recovery-Oriented</h3>
-              <p>Recovery is possible and common. Recovery may not mean absence of symptoms but rather improved management and quality of life.</p>
+              <h3 className="text-xl font-alegreya font-black mb-3 text-theme-purple-dark">Orientado a la Recuperación</h3>
+              <p>La recuperación es posible y común. La recuperación puede no significar ausencia de síntomas, sino más bien un mejor manejo y calidad de vida.</p>
             </div>
             
             <div className="card-highlight p-6">
-              <h3 className="text-xl font-alegreya font-black mb-3 text-theme-purple-dark">Diverse Experiences</h3>
-              <p>Each person's experience is unique, shaped by their specific condition, personal attributes, and social environment.</p>
+              <h3 className="text-xl font-alegreya font-black mb-3 text-theme-purple-dark">Experiencias Diversas</h3>
+              <p>La experiencia de cada persona es única, moldeada por su condición específica, atributos personales y entorno social.</p>
             </div>
           </div>
         </Section>
         
-        {/* Common Disorders */}
-        <Section id="disorders" title="Most Frequent Disorders">
+        {/* Trastornos Comunes */}
+        <Section id="disorders" title="Trastornos Más Frecuentes">
           <p className="text-center max-w-3xl mx-auto mb-10">
-            The following are among the most common mental health conditions that can lead to psychosocial disability. Click on each to learn more.
+            Los siguientes están entre las condiciones de salud mental más comunes que pueden conducir a discapacidad psicosocial. Haz clic en cada uno para obtener más información.
           </p>
           
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-10">
             <DisorderCard
-              title="Major Depressive Disorder"
-              description="A mood disorder characterized by persistent feelings of sadness, hopelessness, and loss of interest in activities. It significantly affects daily functioning and quality of life."
-              prevalence="Affects approximately 264 million people worldwide."
+              title="Trastorno Depresivo Mayor"
+              description="Un trastorno del estado de ánimo caracterizado por sentimientos persistentes de tristeza, desesperanza y pérdida de interés en las actividades. Afecta significativamente el funcionamiento diario y la calidad de vida."
+              prevalence="Afecta aproximadamente a 264 millones de personas en todo el mundo."
             />
             
             <DisorderCard
-              title="Anxiety Disorders"
-              description="Include generalized anxiety disorder, panic disorder, phobias, social anxiety disorder, and others. They involve excessive fear or worry that interferes with daily activities."
-              prevalence="Most common mental disorders globally, affecting 284 million people."
+              title="Trastornos de Ansiedad"
+              description="Incluyen trastorno de ansiedad generalizada, trastorno de pánico, fobias, trastorno de ansiedad social y otros. Implican miedo o preocupación excesivos que interfieren con las actividades diarias."
+              prevalence="Los trastornos mentales más comunes a nivel mundial, afectando a 284 millones de personas."
             />
             
             <DisorderCard
-              title="Bipolar Disorder"
-              description="Characterized by alternating periods of depression and mania or hypomania. These mood swings can significantly impact energy, activity, and ability to function."
-              prevalence="Affects approximately 45 million people worldwide."
+              title="Trastorno Bipolar"
+              description="Caracterizado por períodos alternados de depresión y manía o hipomanía. Estos cambios de humor pueden afectar significativamente la energía, la actividad y la capacidad de funcionar."
+              prevalence="Afecta aproximadamente a 45 millones de personas en todo el mundo."
             />
             
             <DisorderCard
-              title="Schizophrenia"
-              description="A serious mental disorder characterized by distortions in thinking, perception, emotions, language, sense of self, and behavior. Can include hallucinations and delusions."
-              prevalence="Affects approximately 20 million people worldwide."
+              title="Esquizofrenia"
+              description="Un trastorno mental grave caracterizado por distorsiones en el pensamiento, la percepción, las emociones, el lenguaje, el sentido del yo y el comportamiento. Puede incluir alucinaciones y delirios."
+              prevalence="Afecta aproximadamente a 20 millones de personas en todo el mundo."
             />
             
             <DisorderCard
-              title="Post-Traumatic Stress Disorder (PTSD)"
-              description="Develops in some people who have experienced a shocking, scary, or dangerous event. Symptoms can include flashbacks, nightmares, severe anxiety, and uncontrollable thoughts about the event."
-              prevalence="Lifetime prevalence ranges from 1% to 14% depending on social factors."
+              title="Trastorno de Estrés Postraumático (TEPT)"
+              description="Se desarrolla en algunas personas que han experimentado un evento impactante, aterrador o peligroso. Los síntomas pueden incluir flashbacks, pesadillas, ansiedad severa y pensamientos incontrolables sobre el evento."
+              prevalence="La prevalencia de vida varía del 1% al 14% dependiendo de los factores sociales."
             />
             
             <DisorderCard
-              title="Obsessive-Compulsive Disorder (OCD)"
-              description="Characterized by unreasonable thoughts and fears (obsessions) that lead to repetitive behaviors (compulsions). These obsessions and compulsions interfere with daily activities and cause significant distress."
-              prevalence="Affects approximately 1-3% of the general population."
+              title="Trastorno Obsesivo-Compulsivo (TOC)"
+              description="Caracterizado por pensamientos y miedos irrazonables (obsesiones) que conducen a comportamientos repetitivos (compulsiones). Estas obsesiones y compulsiones interfieren con las actividades diarias y causan un malestar significativo."
+              prevalence="Afecta aproximadamente al 1-3% de la población general."
             />
           </div>
         </Section>
         
-        {/* Support & Help */}
-        <Section id="support" title="Support & Help" color="light">
+        {/* Apoyo y Ayuda */}
+        <Section id="support" title="Apoyo y Ayuda" color="light">
           <p className="text-center max-w-3xl mx-auto mb-10">
-            There are various approaches and resources available to support individuals with psychosocial disabilities. An integrated, person-centered approach often yields the best results.
+            Existen varios enfoques y recursos disponibles para apoyar a personas con discapacidades psicosociales. Un enfoque integrado y centrado en la persona a menudo produce los mejores resultados.
           </p>
           
           <div className="grid md:grid-cols-2 gap-6 mb-12">
             <SupportMethod
               icon={<Brain className="h-6 w-6" />}
-              title="Therapy and Counseling"
-              description="Various therapeutic approaches like Cognitive Behavioral Therapy (CBT), Dialectical Behavior Therapy (DBT), and psychotherapy can help manage symptoms and improve coping skills."
+              title="Terapia y Consejería"
+              description="Varios enfoques terapéuticos como la Terapia Cognitivo-Conductual (TCC), la Terapia Dialéctica Conductual (TDC) y la psicoterapia pueden ayudar a manejar los síntomas y mejorar las habilidades de afrontamiento."
             />
             
             <SupportMethod
               icon={<Heart className="h-6 w-6" />}
-              title="Medication"
-              description="When prescribed and monitored by qualified healthcare providers, medication can be effective in managing symptoms of many mental health conditions."
+              title="Medicación"
+              description="Cuando es prescrita y monitoreada por proveedores de atención médica calificados, la medicación puede ser efectiva para manejar los síntomas de muchas condiciones de salud mental."
             />
             
             <SupportMethod
               icon={<Users className="h-6 w-6" />}
-              title="Peer Support"
-              description="Connecting with others who have similar experiences can provide validation, hope, practical advice, and reduce feelings of isolation."
+              title="Apoyo entre Pares"
+              description="Conectarse con otros que tienen experiencias similares puede proporcionar validación, esperanza, consejos prácticos y reducir los sentimientos de aislamiento."
             />
             
             <SupportMethod
               icon={<Book className="h-6 w-6" />}
-              title="Education"
-              description="Learning about one's condition, triggers, and management strategies empowers individuals to take an active role in their recovery."
+              title="Educación"
+              description="Aprender sobre la propia condición, desencadenantes y estrategias de manejo empodera a las personas para tomar un papel activo en su recuperación."
             />
             
             <SupportMethod
               icon={<MessageSquare className="h-6 w-6" />}
-              title="Community Support"
-              description="Support groups, community mental health centers, and advocacy organizations can provide valuable resources and connections."
+              title="Apoyo Comunitario"
+              description="Grupos de apoyo, centros comunitarios de salud mental y organizaciones de defensa pueden proporcionar recursos valiosos y conexiones."
             />
             
             <SupportMethod
               icon={<Search className="h-6 w-6" />}
-              title="Reasonable Accommodations"
-              description="Workplace and educational accommodations can help remove barriers to participation and success in these environments."
+              title="Adaptaciones Razonables"
+              description="Las adaptaciones en el lugar de trabajo y educativas pueden ayudar a eliminar barreras para la participación y el éxito en estos entornos."
             />
           </div>
           
           <div className="bg-white rounded-xl p-6 shadow-md">
             <h3 className="text-2xl font-alegreya font-black mb-4 text-theme-purple-dark text-center">
-              Frequently Asked Questions
+              Preguntas Frecuentes
             </h3>
             
             <div className="max-w-3xl mx-auto">
               <FaqItem
-                question="How do I know if I need professional help?"
-                answer="If your mental health symptoms are causing significant distress or interfering with your daily life, relationships, or work for more than two weeks, it's a good idea to consult a mental health professional. Trust your instincts—if you feel something is wrong, seek help."
+                question="¿Cómo sé si necesito ayuda profesional?"
+                answer="Si tus síntomas de salud mental están causando un malestar significativo o interfiriendo con tu vida diaria, relaciones o trabajo durante más de dos semanas, es una buena idea consultar a un profesional de salud mental. Confía en tus instintos: si sientes que algo anda mal, busca ayuda."
               />
               
               <FaqItem
-                question="What's the difference between a psychiatrist and a psychologist?"
-                answer="Psychiatrists are medical doctors who can prescribe medication and diagnose mental health conditions. Psychologists typically have doctoral degrees in psychology and provide therapy and counseling but usually cannot prescribe medications (with some exceptions)."
+                question="¿Cuál es la diferencia entre un psiquiatra y un psicólogo?"
+                answer="Los psiquiatras son médicos que pueden recetar medicamentos y diagnosticar condiciones de salud mental. Los psicólogos típicamente tienen doctorados en psicología y proporcionan terapia y consejería pero generalmente no pueden recetar medicamentos (con algunas excepciones)."
               />
               
               <FaqItem
-                question="Is medication always necessary?"
-                answer="No, medication is not always necessary. Treatment plans should be individualized based on the specific condition, its severity, and the person's preferences. Many people benefit from therapy alone or a combination of therapy and lifestyle changes."
+                question="¿Siempre es necesaria la medicación?"
+                answer="No, la medicación no siempre es necesaria. Los planes de tratamiento deben ser individualizados basados en la condición específica, su gravedad y las preferencias de la persona. Muchas personas se benefician solo de la terapia o de una combinación de terapia y cambios en el estilo de vida."
               />
               
               <FaqItem
-                question="How can I support a loved one with a psychosocial disability?"
-                answer="Listen without judgment, educate yourself about their condition, encourage treatment, be patient and consistent, respect their autonomy, take care of yourself, and offer practical help. Remember that recovery is not linear and setbacks are part of the process."
+                question="¿Cómo puedo apoyar a un ser querido con una discapacidad psicosocial?"
+                answer="Escucha sin juzgar, edúcate sobre su condición, fomenta el tratamiento, sé paciente y consistente, respeta su autonomía, cuídate a ti mismo y ofrece ayuda práctica. Recuerda que la recuperación no es lineal y los retrocesos son parte del proceso."
               />
             </div>
           </div>
         </Section>
         
-        {/* OCD & Psychosocial Disability */}
-        <Section id="ocd" title="The Role of OCD in Psychosocial Disability">
+        {/* TOC y Discapacidad Psicosocial */}
+        <Section id="ocd" title="El Papel del TOC en la Discapacidad Psicosocial">
           <div className="grid md:grid-cols-2 gap-10">
             <div>
               <h3 className="text-2xl font-alegreya font-black mb-4 text-theme-purple-dark">
-                Understanding OCD
+                Entendiendo el TOC
               </h3>
               <p className="mb-4">
-                Obsessive-Compulsive Disorder (OCD) is characterized by unwanted, intrusive thoughts (obsessions) and repetitive behaviors or mental acts (compulsions) that individuals feel driven to perform to reduce anxiety or prevent a dreaded event.
+                El Trastorno Obsesivo-Compulsivo (TOC) se caracteriza por pensamientos no deseados e intrusivos (obsesiones) y comportamientos repetitivos o actos mentales (compulsiones) que las personas sienten la necesidad de realizar para reducir la ansiedad o prevenir un evento temido.
               </p>
               <p className="mb-4">
-                OCD can significantly interfere with daily activities and social interactions. The time consumed by obsessions and compulsions, along with the distress they cause, can lead to substantial disability.
+                El TOC puede interferir significativamente con las actividades diarias y las interacciones sociales. El tiempo consumido por las obsesiones y compulsiones, junto con el malestar que causan, puede conducir a una discapacidad sustancial.
               </p>
               <p>
-                Common obsessions include fear of contamination, need for symmetry or exactness, fear of harm, and unwanted aggressive or taboo thoughts. Common compulsions include excessive cleaning, checking, counting, arranging, and seeking reassurance.
+                Las obsesiones comunes incluyen miedo a la contaminación, necesidad de simetría o exactitud, miedo al daño y pensamientos agresivos o tabú no deseados. Las compulsiones comunes incluyen limpieza excesiva, verificación, conteo, organización y búsqueda de reaseguramiento.
               </p>
             </div>
             
             <div>
               <h3 className="text-2xl font-alegreya font-black mb-4 text-theme-purple-dark">
-                Impact on Functioning
+                Impacto en el Funcionamiento
               </h3>
               <div className="space-y-4">
                 <div className="card-highlight p-4">
-                  <h4 className="text-lg font-bold mb-2 text-theme-blue">Social Functioning</h4>
-                  <p>OCD can lead to social withdrawal, strained relationships, and reduced participation in social activities due to time spent on rituals or fear of triggering obsessions.</p>
+                  <h4 className="text-lg font-bold mb-2 text-theme-blue">Funcionamiento Social</h4>
+                  <p>El TOC puede llevar al aislamiento social, relaciones tensas y reducción de la participación en actividades sociales debido al tiempo dedicado a rituales o miedo a desencadenar obsesiones.</p>
                 </div>
                 
                 <div className="card-highlight p-4">
-                  <h4 className="text-lg font-bold mb-2 text-theme-blue">Occupational Functioning</h4>
-                  <p>OCD can affect work performance, attendance, and advancement opportunities. Some individuals may avoid certain jobs or responsibilities that trigger their OCD.</p>
+                  <h4 className="text-lg font-bold mb-2 text-theme-blue">Funcionamiento Ocupacional</h4>
+                  <p>El TOC puede afectar el desempeño laboral, la asistencia y las oportunidades de avance. Algunas personas pueden evitar ciertos trabajos o responsabilidades que desencadenan su TOC.</p>
                 </div>
                 
                 <div className="card-highlight p-4">
-                  <h4 className="text-lg font-bold mb-2 text-theme-blue">Daily Living</h4>
-                  <p>Basic activities like eating, grooming, and housekeeping can become time-consuming and complicated due to rituals and obsessions.</p>
+                  <h4 className="text-lg font-bold mb-2 text-theme-blue">Vida Diaria</h4>
+                  <p>Actividades básicas como comer, aseo personal y tareas domésticas pueden volverse consumidoras de tiempo y complicadas debido a rituales y obsesiones.</p>
                 </div>
               </div>
             </div>
           </div>
           
           <Quote 
-            text="OCD is not just about being tidy or particular. It's a serious condition where unwanted thoughts and rituals can take control of a person's life and lead to significant disability."
-            author="International OCD Foundation"
+            text="El TOC no se trata solo de ser ordenado o particular. Es una condición seria donde pensamientos no deseados y rituales pueden tomar el control de la vida de una persona y conducir a una discapacidad significativa."
+            author="Fundación Internacional de TOC"
             className="my-12"
           />
           
           <div>
             <h3 className="text-2xl font-alegreya font-black mb-6 text-theme-purple-dark text-center">
-              Effective Treatments for OCD
+              Tratamientos Efectivos para el TOC
             </h3>
             
             <div className="grid md:grid-cols-3 gap-6">
               <div className="card-highlight p-6">
-                <h4 className="text-xl font-alegreya font-black mb-3 text-theme-blue">Exposure and Response Prevention (ERP)</h4>
-                <p>A type of cognitive-behavioral therapy that involves gradually facing fears without performing rituals, allowing anxiety to naturally decrease over time.</p>
+                <h4 className="text-xl font-alegreya font-black mb-3 text-theme-blue">Exposición y Prevención de Respuesta (EPR)</h4>
+                <p>Un tipo de terapia cognitivo-conductual que implica enfrentar gradualmente los miedos sin realizar rituales, permitiendo que la ansiedad disminuya naturalmente con el tiempo.</p>
               </div>
               
               <div className="card-highlight p-6">
-                <h4 className="text-xl font-alegreya font-black mb-3 text-theme-blue">Medication</h4>
-                <p>Selective serotonin reuptake inhibitors (SSRIs) are commonly prescribed and can be effective in reducing OCD symptoms, especially when combined with therapy.</p>
+                <h4 className="text-xl font-alegreya font-black mb-3 text-theme-blue">Medicación</h4>
+                <p>Los inhibidores selectivos de la recaptación de serotonina (ISRS) se recetan comúnmente y pueden ser efectivos para reducir los síntomas del TOC, especialmente cuando se combinan con terapia.</p>
               </div>
               
               <div className="card-highlight p-6">
-                <h4 className="text-xl font-alegreya font-black mb-3 text-theme-blue">Support Groups</h4>
-                <p>Connecting with others who understand the challenges of OCD can provide valuable emotional support and practical advice for managing the condition.</p>
+                <h4 className="text-xl font-alegreya font-black mb-3 text-theme-blue">Grupos de Apoyo</h4>
+                <p>Conectarse con otros que entienden los desafíos del TOC puede proporcionar un valioso apoyo emocional y consejos prácticos para manejar la condición.</p>
               </div>
             </div>
           </div>
         </Section>
         
-        {/* Resources */}
-        <Section id="resources" title="Resources" color="light">
+        {/* Recursos Generales */}
+        <Section id="resources" title="Recursos" color="light">
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             <div className="card-highlight p-6">
-              <h3 className="text-xl font-alegreya font-black mb-3 text-theme-purple-dark">Crisis Helplines</h3>
+              <h3 className="text-xl font-alegreya font-black mb-3 text-theme-purple-dark">Líneas de Ayuda de Crisis</h3>
               <ul className="space-y-2 list-disc list-inside text-gray-700">
-                <li>National Suicide Prevention Lifeline: 1-800-273-8255</li>
-                <li>Crisis Text Line: Text HOME to 741741</li>
-                <li>SAMHSA's National Helpline: 1-800-662-HELP (4357)</li>
+                <li>Línea Nacional de Prevención del Suicidio: 106</li>
+                <li>Línea de Crisis por Texto: Envía AYUDA al 741741</li>
+                <li>Línea de Ayuda Nacional: 01-8000-113113</li>
               </ul>
             </div>
             
             <div className="card-highlight p-6">
-              <h3 className="text-xl font-alegreya font-black mb-3 text-theme-purple-dark">Organizations</h3>
+              <h3 className="text-xl font-alegreya font-black mb-3 text-theme-purple-dark">Organizaciones</h3>
               <ul className="space-y-2 list-disc list-inside text-gray-700">
-                <li>National Alliance on Mental Illness (NAMI)</li>
-                <li>Mental Health America</li>
-                <li>International OCD Foundation</li>
-                <li>Anxiety and Depression Association of America</li>
+                <li>Asociación Colombiana de Psiquiatría</li>
+                <li>Liga Colombiana Contra la Epilepsia</li>
+                <li>Fundación CEPYTIN</li>
+                <li>Asociación Colombiana de Bienestar Mental</li>
               </ul>
             </div>
             
             <div className="card-highlight p-6">
-              <h3 className="text-xl font-alegreya font-black mb-3 text-theme-purple-dark">Digital Resources</h3>
+              <h3 className="text-xl font-alegreya font-black mb-3 text-theme-purple-dark">Recursos Digitales</h3>
               <ul className="space-y-2 list-disc list-inside text-gray-700">
-                <li>MentalHealth.gov</li>
-                <li>Psychology Today's Therapist Directory</li>
-                <li>Mindfulness apps (Headspace, Calm)</li>
-                <li>Online therapy platforms (BetterHelp, Talkspace)</li>
+                <li>MinSalud.gov.co</li>
+                <li>Directorio de Terapeutas de Psicología Hoy</li>
+                <li>Aplicaciones de mindfulness (Headspace, Calm)</li>
+                <li>Plataformas de terapia en línea (TherapyRoute, Doctoralia)</li>
               </ul>
             </div>
             
             <div className="card-highlight p-6">
-              <h3 className="text-xl font-alegreya font-black mb-3 text-theme-purple-dark">Books</h3>
+              <h3 className="text-xl font-alegreya font-black mb-3 text-theme-purple-dark">Libros</h3>
               <ul className="space-y-2 list-disc list-inside text-gray-700">
-                <li>"The Body Keeps the Score" by Bessel van der Kolk</li>
-                <li>"Feeling Good" by David D. Burns</li>
-                <li>"Brain Lock" by Jeffrey M. Schwartz (for OCD)</li>
-                <li>"An Unquiet Mind" by Kay Redfield Jamison</li>
+                <li>"El cuerpo lleva la cuenta" de Bessel van der Kolk</li>
+                <li>"Sentirse bien" de David D. Burns</li>
+                <li>"Cerebro bajo control" de Jeffrey M. Schwartz (para TOC)</li>
+                <li>"Una mente inquieta" de Kay Redfield Jamison</li>
               </ul>
             </div>
             
             <div className="card-highlight p-6">
-              <h3 className="text-xl font-alegreya font-black mb-3 text-theme-purple-dark">Advocacy</h3>
+              <h3 className="text-xl font-alegreya font-black mb-3 text-theme-purple-dark">Defensa</h3>
               <ul className="space-y-2 list-disc list-inside text-gray-700">
-                <li>World Federation for Mental Health</li>
+                <li>Federación Mundial para la Salud Mental</li>
                 <li>Disability Rights International</li>
-                <li>Human Rights Watch - Disability Rights</li>
-                <li>Local mental health advocacy groups</li>
+                <li>Human Rights Watch - Derechos de Discapacidad</li>
+                <li>Grupos locales de defensa de la salud mental</li>
               </ul>
             </div>
             
             <div className="card-highlight p-6">
-              <h3 className="text-xl font-alegreya font-black mb-3 text-theme-purple-dark">Education</h3>
+              <h3 className="text-xl font-alegreya font-black mb-3 text-theme-purple-dark">Educación</h3>
               <ul className="space-y-2 list-disc list-inside text-gray-700">
-                <li>Mental Health First Aid courses</li>
-                <li>National Institute of Mental Health resources</li>
-                <li>World Health Organization publications</li>
-                <li>University extension programs on mental health</li>
+                <li>Cursos de Primeros Auxilios en Salud Mental</li>
+                <li>Recursos del Instituto Nacional de Salud Mental</li>
+                <li>Publicaciones de la Organización Mundial de la Salud</li>
+                <li>Programas de extensión universitaria sobre salud mental</li>
               </ul>
             </div>
           </div>
         </Section>
-        
-        {/* Personal Stories */}
-        <Section id="stories" title="Personal Stories">
+
+        {/* Recursos en Colombia */}
+        <Section id="colombia" title="Recursos en Colombia">
           <p className="text-center max-w-3xl mx-auto mb-10">
-            Personal narratives can provide insights, hope, and a sense of connection. Here are some stories from individuals living with psychosocial disabilities.
+            Colombia ofrece diversos recursos para personas con discapacidades psicosociales. Aquí hay algunos recursos específicos disponibles en el país.
+          </p>
+          
+          <div className="grid md:grid-cols-2 gap-6 mb-12">
+            <div className="card-highlight p-6">
+              <h3 className="text-xl font-alegreya font-black mb-3 text-theme-purple-dark">Entidades Gubernamentales</h3>
+              <ul className="space-y-2 list-disc list-inside text-gray-700">
+                <li>Ministerio de Salud y Protección Social - Programa de Atención Psicosocial</li>
+                <li>Instituto Colombiano de Bienestar Familiar (ICBF)</li>
+                <li>Secretarías de Salud Departamentales y Municipales</li>
+                <li>Registro para la Localización y Caracterización de Personas con Discapacidad (RLCPD)</li>
+              </ul>
+            </div>
+            
+            <div className="card-highlight p-6">
+              <h3 className="text-xl font-alegreya font-black mb-3 text-theme-purple-dark">Fundaciones y ONGs</h3>
+              <ul className="space-y-2 list-disc list-inside text-gray-700">
+                <li>Fundación Saldarriaga Concha</li>
+                <li>Red Colombiana de Organizaciones de Personas con Discapacidad</li>
+                <li>Asociación Colombiana de Personas con Esquizofrenia y sus Familias</li>
+                <li>Fundación País Posible - Programas de salud mental</li>
+                <li>Corporación Síndrome de Down</li>
+              </ul>
+            </div>
+            
+            <div className="card-highlight p-6">
+              <h3 className="text-xl font-alegreya font-black mb-3 text-theme-purple-dark">Servicios de Salud Mental</h3>
+              <ul className="space-y-2 list-disc list-inside text-gray-700">
+                <li>Línea de Atención Psicológica: 106</li>
+                <li>Centro de Atención Psicosocial (CAP) - varias ciudades</li>
+                <li>EPS/IPS con servicios especializados en salud mental</li>
+                <li>Hospital Mental de Antioquia</li>
+                <li>Clínica Montserrat (Bogotá)</li>
+                <li>Hospital Psiquiátrico Universitario del Valle</li>
+              </ul>
+            </div>
+            
+            <div className="card-highlight p-6">
+              <h3 className="text-xl font-alegreya font-black mb-3 text-theme-purple-dark">Derechos y Marco Legal</h3>
+              <ul className="space-y-2 list-disc list-inside text-gray-700">
+                <li>Ley 1616 de 2013 - Ley de Salud Mental</li>
+                <li>Ley 1618 de 2013 - Derechos de las personas con discapacidad</li>
+                <li>Política Nacional de Salud Mental (Resolución 4886 de 2018)</li>
+                <li>Defensoría del Pueblo - Defensoría Delegada para la Salud</li>
+                <li>Superintendencia Nacional de Salud - para quejas del sistema de salud</li>
+              </ul>
+            </div>
+          </div>
+          
+          <Quote 
+            text="En Colombia, estamos avanzando en el reconocimiento de los derechos de las personas con discapacidades psicosociales, pero aún queda mucho camino por recorrer en términos de acceso a servicios, inclusión social y eliminación del estigma."
+            author="Asociación Colombiana de Psiquiatría"
+            className="my-12"
+          />
+        </Section>
+        
+        {/* Otras Discapacidades */}
+        <Section id="other-disabilities" title="Otras Discapacidades" color="light">
+          <p className="text-center max-w-3xl mx-auto mb-10">
+            Es importante entender que la discapacidad psicosocial es solo un tipo entre diversos tipos de discapacidades. A continuación se presentan otros tipos de discapacidades y sus características distintivas.
+          </p>
+          
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-10">
+            <div className="card-highlight p-6">
+              <h3 className="text-xl font-alegreya font-black mb-3 text-theme-purple-dark">Discapacidad Física</h3>
+              <p className="mb-4">Afecta la movilidad o capacidad física de la persona. Puede incluir parálisis, amputaciones, enfermedades como esclerosis múltiple, distrofia muscular, entre otras.</p>
+              <p>Características: Limitaciones en movimiento, coordinación o destreza, posible necesidad de dispositivos de asistencia como sillas de ruedas, bastones o prótesis.</p>
+            </div>
+            
+            <div className="card-highlight p-6">
+              <h3 className="text-xl font-alegreya font-black mb-3 text-theme-purple-dark">Discapacidad Sensorial</h3>
+              <p className="mb-4">Involucra los sentidos. Incluye discapacidad visual (ceguera total o parcial) y auditiva (sordera total o parcial).</p>
+              <p>Características: Uso de sistemas alternativos de comunicación como braille o lengua de señas, posible necesidad de intérpretes o tecnología asistiva.</p>
+            </div>
+            
+            <div className="card-highlight p-6">
+              <h3 className="text-xl font-alegreya font-black mb-3 text-theme-purple-dark">Discapacidad Intelectual</h3>
+              <p className="mb-4">Limitaciones significativas en el funcionamiento intelectual y en conducta adaptativa. Incluye condiciones como síndrome de Down y otras variaciones genéticas o del desarrollo.</p>
+              <p>Características: Desarrollo más lento de habilidades cognitivas y sociales, posibles dificultades con aprendizaje abstracto o complejo, necesidad de apoyos para vida independiente.</p>
+            </div>
+            
+            <div className="card-highlight p-6">
+              <h3 className="text-xl font-alegreya font-black mb-3 text-theme-purple-dark">Trastornos del Espectro Autista</h3>
+              <p className="mb-4">Grupo de trastornos del desarrollo que afectan la comunicación social y comportamiento. Varía en severidad y presentación.</p>
+              <p>Características: Diferencias en comunicación social, patrones de comportamiento repetitivos o restringidos, posible hipersensibilidad o hiposensibilidad sensorial, preferencia por rutinas.</p>
+            </div>
+            
+            <div className="card-highlight p-6">
+              <h3 className="text-xl font-alegreya font-black mb-3 text-theme-purple-dark">Discapacidades del Aprendizaje</h3>
+              <p className="mb-4">Trastornos neurológicos que afectan la capacidad de procesar información. Incluye dislexia, discalculia, trastorno por déficit de atención, entre otros.</p>
+              <p>Características: Dificultades específicas con lectura, escritura, matemáticas o atención, a menudo con inteligencia promedio o superior en otras áreas.</p>
+            </div>
+            
+            <div className="card-highlight p-6">
+              <h3 className="text-xl font-alegreya font-black mb-3 text-theme-purple-dark">Discapacidades Múltiples</h3>
+              <p className="mb-4">Combinación de dos o más tipos de discapacidades que interactúan de manera que requieren apoyos complejos e individualizados.</p>
+              <p>Características: Necesidades de apoyo únicas basadas en la combinación específica de discapacidades, generalmente requieren enfoques interdisciplinarios.</p>
+            </div>
+          </div>
+          
+          <div className="bg-white rounded-xl p-6 shadow-md">
+            <h3 className="text-2xl font-alegreya font-black mb-4 text-theme-purple-dark text-center">
+              Diferencias con la Discapacidad Psicosocial
+            </h3>
+            
+            <p className="mb-6 text-center">
+              Mientras que todas las discapacidades pueden enfrentar barreras sociales y estigma, la discapacidad psicosocial se distingue por:
+            </p>
+            
+            <div className="grid md:grid-cols-2 gap-6">
+              <div className="card-highlight p-4">
+                <h4 className="text-lg font-bold mb-2 text-theme-blue">Naturaleza Invisible</h4>
+                <p>Es particularmente invisible, lo que puede llevar a mayor escepticismo y estigma por parte de los demás.</p>
+              </div>
+              
+              <div className="card-highlight p-4">
+                <h4 className="text-lg font-bold mb-2 text-theme-blue">Fluctuación</h4>
+                <p>Tiende a ser más fluctuante que muchas otras discapacidades, con períodos de funcionamiento completo y períodos de discapacidad significativa.</p>
+              </div>
+              
+              <div className="card-highlight p-4">
+                <h4 className="text-lg font-bold mb-2 text-theme-blue">Estigma Particular</h4>
+                <p>Enfrenta un tipo particular de estigma relacionado con mitos sobre peligrosidad, debilidad de carácter o falta de voluntad.</p>
+              </div>
+              
+              <div className="card-highlight p-4">
+                <h4 className="text-lg font-bold mb-2 text-theme-blue">Interacción Social-Médica</h4>
+                <p>Se encuentra en la intersección del modelo médico y social de discapacidad, con factores biológicos, psicológicos y sociales que interactúan complejamente.</p>
+              </div>
+            </div>
+          </div>
+        </Section>
+        
+        {/* Diagnóstico */}
+        <Section id="diagnosis" title="Identificación y Diagnóstico">
+          <div className="grid md:grid-cols-2 gap-10">
+            <div>
+              <h3 className="text-2xl font-alegreya font-black mb-4 text-theme-purple-dark">
+                Cómo se Identifica una Discapacidad Psicosocial
+              </h3>
+              <p className="mb-4">
+                La identificación de una discapacidad psicosocial implica reconocer cuándo una condición de salud mental interactúa con barreras sociales para limitar significativamente la participación de una persona en la sociedad.
+              </p>
+              <p className="mb-4">
+                A diferencia de un diagnóstico puramente médico, evaluar una discapacidad psicosocial requiere considerar:
+              </p>
+              <ul className="list-disc list-inside space-y-2 mb-4">
+                <li>El impacto funcional en la vida diaria, trabajo, educación y relaciones</li>
+                <li>La duración y severidad de las limitaciones</li>
+                <li>Las barreras ambientales y actitudinales que enfrenta la persona</li>
+                <li>Las necesidades de apoyo y adaptaciones</li>
+              </ul>
+              <p>
+                La evaluación generalmente es realizada por un equipo interdisciplinario que puede incluir psiquiatras, psicólogos, trabajadores sociales y especialistas en rehabilitación.
+              </p>
+            </div>
+            
+            <div>
+              <h3 className="text-2xl font-alegreya font-black mb-4 text-theme-purple-dark">
+                Proceso de Diagnóstico
+              </h3>
+              <div className="space-y-4">
+                <div className="card-highlight p-4">
+                  <h4 className="text-lg font-bold mb-2 text-theme-blue">Evaluación Clínica</h4>
+                  <p>Un profesional de salud mental realiza una evaluación exhaustiva que incluye historia clínica, síntomas actuales, historial familiar y examen del estado mental.</p>
+                </div>
+                
+                <div className="card-highlight p-4">
+                  <h4 className="text-lg font-bold mb-2 text-theme-blue">Evaluación Funcional</h4>
+                  <p>Evalúa cómo la condición afecta la capacidad de la persona para realizar actividades diarias, trabajar, estudiar y mantener relaciones.</p>
+                </div>
+                
+                <div className="card-highlight p-4">
+                  <h4 className="text-lg font-bold mb-2 text-theme-blue">Herramientas Diagnósticas</h4>
+                  <p>Se utilizan manuales como el DSM-5 o CIE-11 para diagnosticar condiciones específicas, junto con escalas de evaluación funcional para medir el impacto en la vida diaria.</p>
+                </div>
+                
+                <div className="card-highlight p-4">
+                  <h4 className="text-lg font-bold mb-2 text-theme-blue">Evaluación Contextual</h4>
+                  <p>Identifica las barreras sociales, actitudinales y ambientales que interactúan con la condición y contribuyen a la discapacidad.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div className="mt-12">
+            <h3 className="text-2xl font-alegreya font-black mb-6 text-theme-purple-dark text-center">
+              Lo Que NO Es una Discapacidad Psicosocial
+            </h3>
+            
+            <div className="grid md:grid-cols-3 gap-6">
+              <div className="card-highlight p-6">
+                <h4 className="text-xl font-alegreya font-black mb-3 text-theme-blue">Estrés Temporal</h4>
+                <p>Experimentar estrés por eventos de la vida como períodos de duelo, conflictos laborales o problemas de relación no constituye una discapacidad psicosocial a menos que sea prolongado, severo y cause impedimentos funcionales significativos.</p>
+              </div>
+              
+              <div className="card-highlight p-6">
+                <h4 className="text-xl font-alegreya font-black mb-3 text-theme-blue">Diferencias de Personalidad</h4>
+                <p>Rasgos de personalidad como introversión, sensibilidad emocional o pensamiento analítico no son discapacidades, sino variaciones normales del carácter humano.</p>
+              </div>
+              
+              <div className="card-highlight p-6">
+                <h4 className="text-xl font-alegreya font-black mb-3 text-theme-blue">Desacuerdo con Normas Sociales</h4>
+                <p>Comportamientos que simplemente difieren de las normas culturales pero no causan malestar ni impedimento funcional a la persona no constituyen una discapacidad psicosocial.</p>
+              </div>
+            </div>
+          </div>
+          
+          <Quote 
+            text="El diagnóstico es importante, pero más importante aún es entender cómo la condición afecta la vida única de cada persona y qué apoyos específicos necesitan para participar plenamente en la sociedad."
+            author="Organización Mundial de la Salud"
+            className="my-12"
+          />
+        </Section>
+        
+        {/* Experiencias Personales */}
+        <Section id="stories" title="Experiencias Personales">
+          <p className="text-center max-w-3xl mx-auto mb-10">
+            Las narrativas personales pueden proporcionar información, esperanza y un sentido de conexión. Aquí hay algunas historias de personas que viven con discapacidades psicosociales.
           </p>
           
           <div className="grid md:grid-cols-3 gap-6">
             <StoryCard
-              title="Finding My Voice"
-              excerpt="After years of silence, I finally found the courage to speak about my experiences with bipolar disorder. What started as a personal journal became a platform for advocacy and connection with others who were struggling similarly."
-              author="Maria T."
+              title="Encontrando Mi Voz"
+              excerpt="Después de años de silencio, finalmente encontré el valor para hablar sobre mis experiencias con el trastorno bipolar. Lo que comenzó como un diario personal se convirtió en una plataforma para la defensa y la conexión con otros que estaban luchando de manera similar."
+              author="María T."
             />
             
             <StoryCard
-              title="Working Through It"
-              excerpt="Navigating the workplace with severe anxiety wasn't easy. But with the right accommodations and a supportive manager, I've been able to thrive in my career despite the challenges."
-              author="James L."
+              title="Trabajando a Través de Ello"
+              excerpt="Navegar por el lugar de trabajo con ansiedad severa no fue fácil. Pero con las adaptaciones adecuadas y un gerente comprensivo, he podido prosperar en mi carrera a pesar de los desafíos."
+              author="Jaime L."
             />
             
             <StoryCard
-              title="The Power of Community"
-              excerpt="When I was diagnosed with schizophrenia, I felt isolated and afraid. Finding a community of people who understood what I was going through changed everything. Now I help others find their own supportive communities."
+              title="El Poder de la Comunidad"
+              excerpt="Cuando me diagnosticaron TOC y Trastorno Bipolar, me sentí aislado y asustado. Encontrar una comunidad de personas que entendían por lo que estaba pasando lo cambió todo. Ahora ayudo a otros a encontrar sus propias comunidades de apoyo."
               author="David R."
             />
           </div>
           
           <div className="mt-12 text-center">
             <p className="text-lg text-theme-purple-dark mb-6">
-              Your story matters. Sharing experiences can help reduce stigma and inspire others.
+              Tu historia importa. Compartir experiencias puede ayudar a reducir el estigma e inspirar a otros.
             </p>
             
             <a 
@@ -389,7 +607,7 @@ const Index = () => {
               className="bg-theme-purple hover:bg-theme-purple-dark text-white font-medium py-3 px-6 rounded-full transition-colors duration-300 inline-flex items-center"
             >
               <Info className="mr-2 h-5 w-5" />
-              Share Your Story
+              Comparte Tu Historia
             </a>
           </div>
         </Section>
