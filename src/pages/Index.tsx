@@ -1,6 +1,5 @@
-
 import React from 'react';
-import { Brain, Heart, Users, Book, MessageSquare, Search, Info, Wheelchair, Medical, FileCheck } from 'lucide-react';
+import { Brain, Heart, Users, Book, MessageSquare, Search, Info, HandHeart, FileCheck } from 'lucide-react';
 
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
@@ -618,3 +617,4 @@ const Index = () => {
 };
 
 export default Index;
+
